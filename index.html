@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BQP Renderer | Point Drawing</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="inputField"">
+        <label for="data">Upload Json File</label>
+        <input type="file" accept=".json , .JSON" required id="data"/>
+    </div>
+    <canvas id="mycanvas"></canvas>
+    <div class="controller" style="display: none;">
+        <div id="line" >
+            <input type="radio" name="represent" value="line" id="l" checked/>
+            <label for="l">Line</label>
+        </div>
+        <div id="segment">
+            <input type="radio" name="represent" value="segment" id="s"/>
+            <label for="s">Line Segment</label>
+        </div>
+    
+        <div id="point">
+            <input type="radio" name="represent" value="point" id="p"/>
+            <label for="p">Point</label>
+        </div>
+        
+    </div>
+    
+    <footer>
+        
+        <script type="module" src="script.js"></script>
+    </footer>
+</body>
+</html>

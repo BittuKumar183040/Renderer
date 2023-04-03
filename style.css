@@ -1,0 +1,40 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+#mycanvas{
+    position: relative;
+}
+
+.controller{
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color: rgb(205, 196, 196);
+    border-radius: 10px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+.inputField{
+    position: fixed;
+    width: 100vw;
+    background-color: antiquewhite;
+    padding: 10px 0;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputField label{
+    font-size: 18px;
+}
+
+.inputField input{
+    border: 2px solid white;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin: 0 5px;
+    background-color: rgba(166, 184, 211, 0.348);
+    cursor: pointer;
+    z-index: 1;
+}
